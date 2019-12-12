@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    button{
+        width: 80px;
+        height: 35px;
+        background: limegreen;
+        opacity: 0.8;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <button id="button">
+        submit
+    </button>
+    <script>
+    var button = document.getElementById("button");
+    function x() {
+        button.style.opacity="0.5";
+        var y = "我的透明度从0.8变成了0.5";
+        console.log(y);
+    }
+    button.onclick = x;
+    </script>
+</body>
+</html>

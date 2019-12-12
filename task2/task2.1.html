@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #button{
+        width: 80px;
+        height: 35px;
+        background: rgb(39, 202, 17);
+        border: none;
+        margin: 110px auto;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        opacity: 0.8;
+    }
+    #text{
+        margin-top: 8px;
+    }
+    </style>
+</head>
+<body>
+    <button id="button" type="button" onclick="my_function()" >
+        <p id="text">sudmit</p>
+    </button>
+    <script>
+    function my_function(x){
+        var x = document.getElementById("button");
+        x.style.opacity="0.5";
+        var y = "我的透明度从0.8变成了0.5";
+        console.log(y);
+    }
+    </script>
+</body>
+</html>
